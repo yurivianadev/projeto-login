@@ -3,74 +3,150 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
-   height: 100vh;
-    background-image: linear-gradient(to bottom, #9E138C, #56F0E4);
-   background-repeat: no-repeat; 
-   background-position: ;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body, html{
     height: 100vh;
+    width: 100vw;
+    background-color: #9E138C;
+    background-repeat: no-repeat; 
+    
 }
+
 
 main{
-    background-color: white;
-    border-radius: 10px; 
-    text-align: left;
-    margin: 10px;
-    height: 250px;
-   
-
-}
-
-main h1, p{
-    text-align: center;
-}
-
-
-
-div.usuario{
-    padding: 2px;
-    padding-left: 10px;
-    text-align: justify;
-}
-
-.caixas{
-    background-color: #56F0E4;
-    border-radius: 5px;
-    
-}
-
-.caixas:hover{
-    background-color: #56f0e33b;
-
-}
-
-input#envio{
-    margin-left: 10px;
-    width: 380px;
-    background-color: #3ba49b;
-    color: white;
-    float: left;
-    border-radius: 5px;
+    height: 100vh;
+    width: 100vw;
     position: relative;
+
+
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 300px;
+    height: 620px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.334);
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section > div#imagem{
+    display: block;
+    background: black url(../imagens/pexels-jakubzerdzicki-31121842.jpg) no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+section#login > div#formulario{
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+}
+    
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+div#formulario > p{
+    font-size: 2px;
+}
+
+
+img#chave{   
+    background-color: none;
+    font-size: 2em;
+    color: white;
+    width: 38px;
+    padding: 5px;
+}
+
+div.campo{
+    background-color: #9E138C;
+    border-radius: 7px;
+    margin: 7px 0px ;
+    height: 38px;
+    width: 100%;
+
+}
+
+div.campo > label > span{
+    background-color: none;
+    font-size: 2em;
+    color: white;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #56F0E4;
+    font-size: 1em;
+    border: 0px;
+    border-radius: 0px 7px 7px 0px;
+    width: calc(100% - 47px );
+    height: 100%;
+    padding: 4px;
+    margin-right: -2px;
+    transform: translateY(-8px);
     
 }
 
-input#envio:hover{
-    background-color: #3ba49b89;
+#isenha{
+    padding-top: 6px;
+    margin-right: -3px;
 }
 
-.material-symbols-outlined{
-    text-align: center;
-    border-radius: 5px;
-    padding-right: 19px;
-    background-color: #9E138C;
+
+div.campo > input:hover{
+    background-color: #56f0e376;
 }
+
+#envio{
+    display: block;
+    font-size: 1em;
+    
+    margin-bottom: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #3daba2;
+    font-weight: bolder;
+    text-shadow: 1px 3px 10px #3daba2;
+    color: rgba(255, 255, 255, 0.629);
+    border-radius: 7px;
+}
+#envio:hover{
+    
+    background-color: #3daba263;
+    color: rgba(0, 0, 0, 0.629);
+    
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    background-color: white;
+    
+    border: 1px solid rgb(111, 110, 109);
+    width: 100%;
+    height: 40px;   
+    border-radius: 7px;
+    color: #339088;
+    text-decoration: none;
+    
+}    
+
+form > a.botao:hover{
+    
+    background-color: #3daba2;
+    
+}
+
